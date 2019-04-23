@@ -1,0 +1,119 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.vgvee.arfurniture"
+        minSdkVersion 27
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation 'com.google.ar:core:1.7.0'
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.7.0'
+}
+
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+
+sceneform.asset('sampledata/models/Armchair/Armchair_01.obj',
+        'default',
+        'sampledata/models/Armchair/Armchair_01.sfa',
+        'src/main/assets/Armchair_01')
+
+sceneform.asset('sampledata/models/Bed/Bed_01.obj',
+        'default',
+        'sampledata/models/Bed/Bed_01.sfa',
+        'src/main/assets/Bed_01')
+
+sceneform.asset('sampledata/models/Bedroom/Bedroom.obj',
+        'default',
+        'sampledata/models/Bedroom/Bedroom.sfa',
+        'src/main/assets/Bedroom')
+
+sceneform.asset('sampledata/models/Bookcase/model.obj',
+        'default',
+        'sampledata/models/Bookcase/model.sfa',
+        'src/main/assets/bookcase')
+
+sceneform.asset('sampledata/models/BreakfastBar/model.obj',
+        'default',
+        'sampledata/models/BreakfastBar/model.sfa',
+        'src/main/assets/BreakFastBar')
+
+sceneform.asset('sampledata/models/CornerTable/model.obj',
+        'default',
+        'sampledata/models/CornerTable/model.sfa',
+        'src/main/assets/CornerTable')
+
+sceneform.asset('sampledata/models/Couchred/Couch.obj',
+        'default',
+        'sampledata/models/Couchred/Couch.sfa',
+        'src/main/assets/CouchRed')
+
+sceneform.asset('sampledata/models/CouchWide/model.obj',
+        'default',
+        'sampledata/models/CouchWide/model.sfa',
+        'src/main/assets/CouchWide')
+
+sceneform.asset('sampledata/models/Credenza/Credenza.obj',
+        'default',
+        'sampledata/models/Credenza/Credenza.sfa',
+        'src/main/assets/Credenza')
+
+sceneform.asset('sampledata/models/Desk/Desk.obj',
+        'default',
+        'sampledata/models/Desk/Desk.sfa',
+        'src/main/assets/Desk')
+
+sceneform.asset('sampledata/models/Recliner2/model.obj',
+        'default',
+        'sampledata/models/Recliner2/model.sfa',
+        'src/main/assets/recliner')
+
+sceneform.asset('sampledata/models/Stool/Stool_01(1).obj',
+        'default',
+        'sampledata/models/Stool/Stool_01(1).sfa',
+        'src/main/assets/Stool')
+
+sceneform.asset('sampledata/models/TableLargeRectangular01/Table_Large_Rectangular_01.obj',
+        'default',
+        'sampledata/models/TableLargeRectangular01/Table_Large_Rectangular_01.sfa',
+        'src/main/assets/Table_Large_Rectangular_01')
+
+sceneform.asset('sampledata/models/TableTennisTable/Table tennis table.obj',
+        'default',
+        'sampledata/models/TableTennisTable/Table tennis table.sfa',
+        'src/main/assets/Table tennis table')
+
+sceneform.asset('sampledata/models/WoodenChair/WoodChair_01(1).obj',
+        'default',
+        'sampledata/models/WoodenChair/WoodChair_01(1).sfa',
+        'src/main/assets/WoodChair_01(1)')
+
+sceneform.asset('sampledata/models/WoodenChair2/CHAHIN_WOODEN_CHAIR.obj',
+        'default',
+        'sampledata/models/WoodenChair2/CHAHIN_WOODEN_CHAIR.sfa',
+        'src/main/assets/CHAHIN_WOODEN_CHAIR')
