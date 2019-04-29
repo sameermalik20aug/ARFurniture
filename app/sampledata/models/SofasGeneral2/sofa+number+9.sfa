@@ -1,0 +1,355 @@
+{
+  animations: [
+    {
+      path: 'sampledata/models/SofasGeneral2/sofa+number+9.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'Suede_Dark_Gray',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'Suede_Dark_Gray',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'Leather_Red_Brown',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'Leather_Red_Brown',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'Material3487',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: null,
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'Formica_Graystone',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'Formica_Graystone',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'Color_B08',
+      parameters: [
+        {
+          baseColor: [
+            0.40000000000000002,
+            0.098039000000000001,
+            0,
+            1,
+          ],
+        },
+        {
+          baseColorMap: null,
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'M_0035_Tan',
+      parameters: [
+        {
+          baseColor: [
+            0.93725499999999995,
+            0.83921599999999996,
+            0.792157,
+            1,
+          ],
+        },
+        {
+          baseColorMap: null,
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'Carpet_Plush_Charcoal',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'Carpet_Plush_Charcoal',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: '_Metal_Silver_1',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: '_Metal_Silver_1',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/models/SofasGeneral2/sofa+number+9.fbx',
+    name: 'sofa+number+9',
+    recenter: 'root',
+    scale: 2.0711930000000001,
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/SofasGeneral2\\sofa+number+9\\Suede_Dark_Gray.jpg',
+      name: 'Suede_Dark_Gray',
+      pipeline_name: '..\\..\\..\\Documents\\sofa+number+9\\Suede_Dark_Gray.jpg',
+    },
+    {
+      file: 'sampledata/models/SofasGeneral2\\sofa+number+9\\Formica_Graystone.jpg',
+      name: 'Formica_Graystone',
+      pipeline_name: '..\\..\\..\\Documents\\sofa+number+9\\Formica_Graystone.jpg',
+    },
+    {
+      file: 'sampledata/models/SofasGeneral2\\sofa+number+9\\Leather_Red_Brown.jpg',
+      name: 'Leather_Red_Brown',
+      pipeline_name: '..\\..\\..\\Documents\\sofa+number+9\\Leather_Red_Brown.jpg',
+    },
+    {
+      file: 'sampledata/models/SofasGeneral2\\sofa+number+9\\Carpet_Plush_Charcoal.jpg',
+      name: 'Carpet_Plush_Charcoal',
+      pipeline_name: '..\\..\\..\\Documents\\sofa+number+9\\Carpet_Plush_Charcoal.jpg',
+    },
+    {
+      file: 'sampledata/models/SofasGeneral2\\sofa+number+9\\_Metal_Silver_1.jpg',
+      name: '_Metal_Silver_1',
+      pipeline_name: '..\\..\\..\\Documents\\sofa+number+9\\_Metal_Silver_1.jpg',
+    },
+  ],
+  version: '0.54:2',
+}

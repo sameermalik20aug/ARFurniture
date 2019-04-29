@@ -117,3 +117,38 @@ sceneform.asset('sampledata/models/WoodenChair2/CHAHIN_WOODEN_CHAIR.obj',
         'default',
         'sampledata/models/WoodenChair2/CHAHIN_WOODEN_CHAIR.sfa',
         'src/main/assets/CHAHIN_WOODEN_CHAIR')
+
+sceneform.asset('sampledata/models/SofasGeneral1/Groupe_47.fbx',
+        'default',
+        'sampledata/models/SofasGeneral1/Groupe_47.sfa',
+        'src/main/assets/Groupe_47')
+
+sceneform.asset('sampledata/models/SofasGeneral2/sofa+number+9.fbx',
+        'default',
+        'sampledata/models/SofasGeneral2/sofa+number+9.sfa',
+        'src/main/assets/sofa+number+9')
+
+sceneform.asset('sampledata/models/ReneHolten2/Mare+LC302.fbx',
+        'default',
+        'sampledata/models/ReneHolten2/Mare+LC302.sfa',
+        'src/main/assets/Mare+LC302')
+
+sceneform.asset('sampledata/models/ReneHolten3/Mare+LC306.fbx',
+        'default',
+        'sampledata/models/ReneHolten3/Mare+LC306.sfa',
+        'src/main/assets/Mare+LC306')
+
+sceneform.asset('sampledata/models/ReneHolten4/Mare+LC309.fbx',
+        'default',
+        'sampledata/models/ReneHolten4/Mare+LC309.sfa',
+        'src/main/assets/Mare+LC309')
+
+sceneform.asset('sampledata/models/ReneHolten5/Mare+LC351.fbx',
+        'default',
+        'sampledata/models/ReneHolten5/Mare+LC351.sfa',
+        'src/main/assets/Mare+LC351')
+
+sceneform.asset('sampledata/models/ReneHolten6/Mare+LC363.fbx',
+        'default',
+        'sampledata/models/ReneHolten6/Mare+LC363.sfa',
+        'src/main/assets/Mare+LC363')

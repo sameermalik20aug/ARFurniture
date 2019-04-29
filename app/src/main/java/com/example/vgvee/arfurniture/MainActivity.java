@@ -139,6 +139,42 @@ public class MainActivity extends AppCompatActivity {
         tabletennis.setContentDescription("TableTennis Table");
         tabletennis.setOnClickListener(view ->{addObject(Uri.parse("TTtable.sfb"));});
         gallery.addView(tabletennis);
+
+        ImageView2 lc302 = new ImageView2(this);
+        lc302.setImageResource(R.drawable.lc302);
+        lc302.setContentDescription("LC302");
+        lc302.setOnClickListener(view ->{addObject(Uri.parse("Mare+LC302.sfb"));});
+        gallery.addView(lc302);
+
+        ImageView2 lc306 = new ImageView2(this);
+        lc306.setImageResource(R.drawable.lc306);
+        lc306.setContentDescription("LC306");
+        lc306.setOnClickListener(view ->{addObject(Uri.parse("Mare+LC306.sfb"));});
+        gallery.addView(lc306);
+
+        ImageView2 lc309 = new ImageView2(this);
+        lc309.setImageResource(R.drawable.lc309);
+        lc309.setContentDescription("LC309");
+        lc309.setOnClickListener(view ->{addObject(Uri.parse("Mare+LC309.sfb"));});
+        gallery.addView(lc309);
+
+        ImageView2 lc351 = new ImageView2(this);
+        lc351.setImageResource(R.drawable.lc351);
+        lc351.setContentDescription("LC351");
+        lc351.setOnClickListener(view ->{addObject(Uri.parse("Mare+LC351.sfb"));});
+        gallery.addView(lc351);
+
+        ImageView2 lc363 = new ImageView2(this);
+        lc363.setImageResource(R.drawable.lc363);
+        lc363.setContentDescription("LC363");
+        lc363.setOnClickListener(view ->{addObject(Uri.parse("Mare+LC363.sfb"));});
+        gallery.addView(lc363);
+
+        ImageView2 sofaNumber9 = new ImageView2(this);
+        sofaNumber9.setImageResource(R.drawable.sofanumber9);
+        sofaNumber9.setContentDescription("SofaNumber9");
+        sofaNumber9.setOnClickListener(view ->{addObject(Uri.parse("sofa+number+9.sfb"));});
+        gallery.addView(sofaNumber9);
     }
 
 //    private void addObject2(Uri model) {
@@ -187,8 +223,9 @@ public class MainActivity extends AppCompatActivity {
 
                     // Create the transformable andy and add it to the anchor.
                     TransformableNode andy = new TransformableNode(arFragment.getTransformationSystem());
-                    andy.setParent(anchorNode);
                     andy.setRenderable(andyRenderable);
+                    andy.getScaleController().setMaxScale(25.0f);
+                    andy.setParent(anchorNode);
                     andy.select();
                 });
     }
