@@ -1,0 +1,149 @@
+{
+  animations: [
+    {
+      path: 'sampledata/models/SofasGeneral1/Groupe_47.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: '_1',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: '_1',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: '_1_1',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: '_1_1',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'FrontColor',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: null,
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/models/SofasGeneral1/Groupe_47.fbx',
+    name: 'Groupe_47',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/SofasGeneral1\\Groupe_47\\_1.jpg',
+      name: '_1',
+      pipeline_name: '..\\..\\..\\Documents\\Groupe_47\\_1.jpg',
+    },
+    {
+      file: 'sampledata/models/SofasGeneral1\\Groupe_47\\_1_1.jpg',
+      name: '_1_1',
+      pipeline_name: '..\\..\\..\\Documents\\Groupe_47\\_1_1.jpg',
+    },
+  ],
+  version: '0.54:2',
+}

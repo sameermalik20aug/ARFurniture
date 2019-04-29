@@ -1,0 +1,107 @@
+{
+  animations: [
+    {
+      path: 'sampledata/models/ReneHolten5/Mare+LC351.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'e82acec0a97cb014',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'e82acec0a97cb014',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'Material__25_cec6ec75',
+      parameters: [
+        {
+          baseColor: [
+            0.584314,
+            0.584314,
+            0.584314,
+            1,
+          ],
+        },
+        {
+          baseColorMap: null,
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/models/ReneHolten5/Mare+LC351.fbx',
+    name: 'Mare+LC351',
+    recenter: 'root',
+    scale: 1.9004909999999999,
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/ReneHolten5\\Mare+LC351\\e82acec0a97cb014.png',
+      name: 'e82acec0a97cb014',
+      pipeline_name: '..\\..\\..\\Documents\\Mare+LC351\\e82acec0a97cb014.png',
+    },
+  ],
+  version: '0.54:2',
+}
