@@ -28,8 +28,22 @@
             android:id="@+id/gallery_layout"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            />
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Remove"
+                android:id="@+id/removeBtn"
+                />
+        </LinearLayout>
     </HorizontalScrollView>
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/ic_my_icon"-->
+        <!--android:layout_margin="16dp" -->
+        <!--/>-->
 
 </android.support.constraint.ConstraintLayout>

@@ -12,6 +12,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -41,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
 
     private ArFragment arFragment;
     private ModelRenderable andyRenderable;
+    private Button removeBtn;
+    private Anchor anchor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +55,15 @@ public class MainActivity extends AppCompatActivity {
         }
 
         setContentView(R.layout.activity_main);
+        removeBtn = findViewById(R.id.removeBtn);
         arFragment = (ArFragment) getSupportFragmentManager().findFragmentById(R.id.ux_fragment);
+
+        removeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                anchor.detach();
+            }
+        });
 
         initializeGallery();
     }
@@ -80,65 +92,65 @@ public class MainActivity extends AppCompatActivity {
     private void initializeGallery() {
         LinearLayout gallery = findViewById(R.id.gallery_layout);
 
-        ImageView2 armchair = new ImageView2(this);
-        armchair.setImageResource(R.drawable.armchair);
-        armchair.setContentDescription("armchair");
-        armchair.setOnClickListener(view ->{addObject(Uri.parse("Armchair_01.sfb"));});
-        gallery.addView(armchair);
-
+//        ImageView2 armchair = new ImageView2(this);
+//        armchair.setImageResource(R.drawable.armchair);
+//        armchair.setContentDescription("armchair");
+//        armchair.setOnClickListener(view ->{addObject(Uri.parse("Armchair_01.sfb"));});
+//        gallery.addView(armchair);
+//
         ImageView2 bed = new ImageView2(this);
         bed.setImageResource(R.drawable.bed);
         bed.setContentDescription("bed");
         bed.setOnClickListener(view ->{addObject(Uri.parse("Bed_01.sfb"));});
         gallery.addView(bed);
-
-        ImageView2 bedroom = new ImageView2(this);
-        bedroom.setImageResource(R.drawable.bedroom);
-        bedroom.setContentDescription("bedroom");
-        bedroom.setOnClickListener(view ->{addObject(Uri.parse("Bedroom.sfb"));});
-        gallery.addView(bedroom);
-
-        ImageView2 bookcase = new ImageView2(this);
-        bookcase.setImageResource(R.drawable.bookcase);
-        bookcase.setContentDescription("bookcase");
-        bookcase.setOnClickListener(view ->{addObject(Uri.parse("bookcase.sfb"));});
-        gallery.addView(bookcase);
-
-        ImageView2 breakfast = new ImageView2(this);
-        breakfast.setImageResource(R.drawable.breakfastbar);
-        breakfast.setContentDescription("breakfastbar");
-        breakfast.setOnClickListener(view ->{addObject(Uri.parse("BreakFastBar.sfb"));});
-        gallery.addView(breakfast);
-
-        ImageView2 cornertable = new ImageView2(this);
-        cornertable.setImageResource(R.drawable.cornertable);
-        cornertable.setContentDescription("andy");
-        cornertable.setOnClickListener(view ->{addObject(Uri.parse("CornerTable.sfb"));});
-        gallery.addView(cornertable);
-
-        ImageView2 couchred = new ImageView2(this);
-        couchred.setImageResource(R.drawable.couchred);
-        couchred.setContentDescription("andy");
-        couchred.setOnClickListener(view ->{addObject(Uri.parse("CouchRed.sfb"));});
-        gallery.addView(couchred);
-
+//
+//        ImageView2 bedroom = new ImageView2(this);
+//        bedroom.setImageResource(R.drawable.bedroom);
+//        bedroom.setContentDescription("bedroom");
+//        bedroom.setOnClickListener(view ->{addObject(Uri.parse("Bedroom.sfb"));});
+//        gallery.addView(bedroom);
+//
+//        ImageView2 bookcase = new ImageView2(this);
+//        bookcase.setImageResource(R.drawable.bookcase);
+//        bookcase.setContentDescription("bookcase");
+//        bookcase.setOnClickListener(view ->{addObject(Uri.parse("bookcase.sfb"));});
+//        gallery.addView(bookcase);
+//
+//        ImageView2 breakfast = new ImageView2(this);
+//        breakfast.setImageResource(R.drawable.breakfastbar);
+//        breakfast.setContentDescription("breakfastbar");
+//        breakfast.setOnClickListener(view ->{addObject(Uri.parse("BreakFastBar.sfb"));});
+//        gallery.addView(breakfast);
+//
+//        ImageView2 cornertable = new ImageView2(this);
+//        cornertable.setImageResource(R.drawable.cornertable);
+//        cornertable.setContentDescription("andy");
+//        cornertable.setOnClickListener(view ->{addObject(Uri.parse("CornerTable.sfb"));});
+//        gallery.addView(cornertable);
+//
+//        ImageView2 couchred = new ImageView2(this);
+//        couchred.setImageResource(R.drawable.couchred);
+//        couchred.setContentDescription("andy");
+//        couchred.setOnClickListener(view ->{addObject(Uri.parse("CouchRed.sfb"));});
+//        gallery.addView(couchred);
+//
         ImageView2 couchwide = new ImageView2(this);
         couchwide.setImageResource(R.drawable.couchwide);
         couchwide.setContentDescription("couchwide");
         couchwide.setOnClickListener(view ->{addObject(Uri.parse("CouchWide.sfb"));});
         gallery.addView(couchwide);
-
-        ImageView2 credenza = new ImageView2(this);
-        credenza.setImageResource(R.drawable.credenza);
-        credenza.setContentDescription("credenza");
-        credenza.setOnClickListener(view ->{addObject(Uri.parse("Credenza.sfb"));});
-        gallery.addView(credenza);
-
-        ImageView2 tabletennis = new ImageView2(this);
-        tabletennis.setImageResource(R.drawable.tabletennis);
-        tabletennis.setContentDescription("TableTennis Table");
-        tabletennis.setOnClickListener(view ->{addObject(Uri.parse("TTtable.sfb"));});
-        gallery.addView(tabletennis);
+//
+//        ImageView2 credenza = new ImageView2(this);
+//        credenza.setImageResource(R.drawable.credenza);
+//        credenza.setContentDescription("credenza");
+//        credenza.setOnClickListener(view ->{addObject(Uri.parse("Credenza.sfb"));});
+//        gallery.addView(credenza);
+//
+//        ImageView2 tabletennis = new ImageView2(this);
+//        tabletennis.setImageResource(R.drawable.tabletennis);
+//        tabletennis.setContentDescription("TableTennis Table");
+//        tabletennis.setOnClickListener(view ->{addObject(Uri.parse("TTtable.sfb"));});
+//        gallery.addView(tabletennis);
 
         ImageView2 lc302 = new ImageView2(this);
         lc302.setImageResource(R.drawable.lc302);
@@ -177,24 +189,6 @@ public class MainActivity extends AppCompatActivity {
         gallery.addView(sofaNumber9);
     }
 
-//    private void addObject2(Uri model) {
-//        Frame frame = arFragment.getArSceneView().getArFrame();
-//        android.graphics.Point pt = getScreenCenter();
-//        List<HitResult> hits;
-//        if (frame != null) {
-//            hits = frame.hitTest(pt.x, pt.y);
-//            for (HitResult hit : hits) {
-//                Trackable trackable = hit.getTrackable();
-//                if (trackable instanceof Plane &&
-//                        ((Plane) trackable).isPoseInPolygon(hit.getHitPose())) {
-//                    placeObject(arFragment, hit.createAnchor(), model);
-//                    break;
-//
-//                }
-//            }
-//        }
-//    }
-
     private void addObject(Uri model){
         ModelRenderable.builder()
                 .setSource(this, model)
@@ -217,7 +211,7 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     // Create the Anchor.
-                    Anchor anchor = hitResult.createAnchor();
+                    anchor = hitResult.createAnchor();
                     AnchorNode anchorNode = new AnchorNode(anchor);
                     anchorNode.setParent(arFragment.getArSceneView().getScene());
 
@@ -229,29 +223,4 @@ public class MainActivity extends AppCompatActivity {
                     andy.select();
                 });
     }
-
-//    private void placeObject(ArFragment fragment, Anchor anchor, Uri model) {
-//        CompletableFuture<Void> renderableFuture =
-//                ModelRenderable.builder()
-//                        .setSource(fragment.getContext(), model)
-//                        .build()
-//                        .thenAccept(renderable -> addNodeToScene(fragment, anchor, renderable))
-//                        .exceptionally((throwable -> {
-//                            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-//                            builder.setMessage(throwable.getMessage())
-//                                    .setTitle("Codelab error!");
-//                            AlertDialog dialog = builder.create();
-//                            dialog.show();
-//                            return null;
-//                        }));
-//    }
-
-//    private void addNodeToScene(ArFragment fragment, Anchor anchor, Renderable renderable) {
-//        AnchorNode anchorNode = new AnchorNode(anchor);
-//        TransformableNode node = new TransformableNode(fragment.getTransformationSystem());
-//        node.setRenderable(renderable);
-//        node.setParent(anchorNode);
-//        fragment.getArSceneView().getScene().addChild(anchorNode);
-//        node.select();
-//    }
 }
