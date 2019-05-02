@@ -1,0 +1,197 @@
+{
+  animations: [
+    {
+      path: 'sampledata/models/blackSofa/blackSofa.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'canape_3_places_en_tissu_gris_clair_brooke_1000_15_24_166156_1',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'canape_3_places_en_tissu_gris_clair_brooke_1000_15_24_166156_1',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'Wood_Bamboo',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'Wood_Bamboo',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'canape_3_places_en_tissu_gris_clair_brooke_1000_15_24_166156_1_1',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'canape_3_places_en_tissu_gris_clair_brooke_1000_15_24_166156_1_1',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'canape_3_places_en_tissu_gris_clair_brooke_1000_15_24_166156_1_1_2',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'canape_3_places_en_tissu_gris_clair_brooke_1000_15_24_166156_1_1_2',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/models/blackSofa/blackSofa.fbx',
+    name: 'blackSofa',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/blackSofa\\blackSofa\\canape_3_places_en_tissu_gris_clair_brooke_1000_15_24_166156_1.jpg',
+      name: 'canape_3_places_en_tissu_gris_clair_brooke_1000_15_24_166156_1',
+      pipeline_name: '..\\..\\..\\Documents\\blackSofa\\canape_3_places_en_tissu_gris_clair_brooke_1000_15_24_166156_1.jpg',
+    },
+    {
+      file: 'sampledata/models/blackSofa\\blackSofa\\canape_3_places_en_tissu_gris_clair_brooke_1000_15_24_166156_1_1_2.jpg',
+      name: 'canape_3_places_en_tissu_gris_clair_brooke_1000_15_24_166156_1_1_2',
+      pipeline_name: '..\\..\\..\\Documents\\blackSofa\\canape_3_places_en_tissu_gris_clair_brooke_1000_15_24_166156_1_1_2.jpg',
+    },
+    {
+      file: 'sampledata/models/blackSofa\\blackSofa\\Wood_Bamboo.jpg',
+      name: 'Wood_Bamboo',
+      pipeline_name: '..\\..\\..\\Documents\\blackSofa\\Wood_Bamboo.jpg',
+    },
+    {
+      file: 'sampledata/models/blackSofa\\blackSofa\\canape_3_places_en_tissu_gris_clair_brooke_1000_15_24_166156_1_1.jpg',
+      name: 'canape_3_places_en_tissu_gris_clair_brooke_1000_15_24_166156_1_1',
+      pipeline_name: '..\\..\\..\\Documents\\blackSofa\\canape_3_places_en_tissu_gris_clair_brooke_1000_15_24_166156_1_1.jpg',
+    },
+  ],
+  version: '0.54:2',
+}

@@ -152,3 +152,43 @@ sceneform.asset('sampledata/models/ReneHolten6/Mare+LC363.fbx',
         'default',
         'sampledata/models/ReneHolten6/Mare+LC363.sfa',
         'src/main/assets/Mare+LC363')
+
+sceneform.asset('sampledata/models/bailu/bailu.fbx',
+        'default',
+        'sampledata/models/bailu/bailu.sfa',
+        'src/main/assets/bailu')
+
+sceneform.asset('sampledata/models/blackSofa/blackSofa.fbx',
+        'default',
+        'sampledata/models/blackSofa/blackSofa.sfa',
+        'src/main/assets/blackSofa')
+
+sceneform.asset('sampledata/models/europa/europa.fbx',
+        'default',
+        'sampledata/models/europa/europa.sfa',
+        'src/main/assets/europa')
+
+sceneform.asset('sampledata/models/meshSeat/meshseat.fbx',
+        'default',
+        'sampledata/models/meshSeat/meshseat.sfa',
+        'src/main/assets/meshseat')
+
+sceneform.asset('sampledata/models/meshSofa/gra.fbx',
+        'default',
+        'sampledata/models/meshSofa/gra.sfa',
+        'src/main/assets/gra')
+
+sceneform.asset('sampledata/models/pablio/papilio.fbx',
+        'default',
+        'sampledata/models/pablio/papilio.sfa',
+        'src/main/assets/papilio')
+
+sceneform.asset('sampledata/models/whitechair/whitechair.fbx',
+        'default',
+        'sampledata/models/whitechair/whitechair.sfa',
+        'src/main/assets/whitechair')
+
+sceneform.asset('sampledata/models/Beds/bed.fbx',
+        'default',
+        'sampledata/models/Beds/bed.sfa',
+        'src/main/assets/bed')

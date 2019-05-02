@@ -1,0 +1,235 @@
+{
+  animations: [
+    {
+      path: 'sampledata/models/meshSofa/gra.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'DE_PX1S_AD_LTE_GRA_Material_01',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'DE_PX1S_AD_LTE_GRA_Material_01',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'FrontColor',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: null,
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'DE_PX1S_AD_LTE_GRA_Material_04',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'DE_PX1S_AD_LTE_GRA_Material_04',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'DE_PX1S_AD_LTE_GRA_Material_03',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'DE_PX1S_AD_LTE_GRA_Material_03',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'DE_PX1S_AD_LTE_GRA_Material_02',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'DE_PX1S_AD_LTE_GRA_Material_02',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/models/meshSofa/gra.fbx',
+    name: 'gra',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/meshSofa\\gra\\DE_PX1S_AD_LTE_GRA_Material_01.jpg',
+      name: 'DE_PX1S_AD_LTE_GRA_Material_01',
+      pipeline_name: '..\\..\\..\\Documents\\gra\\DE_PX1S_AD_LTE_GRA_Material_01.jpg',
+    },
+    {
+      file: 'sampledata/models/meshSofa\\gra\\DE_PX1S_AD_LTE_GRA_Material_04.jpg',
+      name: 'DE_PX1S_AD_LTE_GRA_Material_04',
+      pipeline_name: '..\\..\\..\\Documents\\gra\\DE_PX1S_AD_LTE_GRA_Material_04.jpg',
+    },
+    {
+      file: 'sampledata/models/meshSofa\\gra\\DE_PX1S_AD_LTE_GRA_Material_03.jpg',
+      name: 'DE_PX1S_AD_LTE_GRA_Material_03',
+      pipeline_name: '..\\..\\..\\Documents\\gra\\DE_PX1S_AD_LTE_GRA_Material_03.jpg',
+    },
+    {
+      file: 'sampledata/models/meshSofa\\gra\\DE_PX1S_AD_LTE_GRA_Material_02.png',
+      name: 'DE_PX1S_AD_LTE_GRA_Material_02',
+      pipeline_name: '..\\..\\..\\Documents\\gra\\DE_PX1S_AD_LTE_GRA_Material_02.png',
+    },
+  ],
+  version: '0.54:2',
+}

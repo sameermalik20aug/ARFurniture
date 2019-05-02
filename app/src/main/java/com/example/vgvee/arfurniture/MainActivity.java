@@ -29,6 +29,7 @@ import com.google.ar.sceneform.rendering.Renderable;
 import com.google.ar.sceneform.ux.ArFragment;
 import com.google.ar.sceneform.ux.TransformableNode;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
@@ -45,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
     private ModelRenderable andyRenderable;
     private Button removeBtn;
     private Anchor anchor;
+    private Anchor x;
+    private TransformableNode y;
+
+    ArrayList<Anchor> anchorList;
+    ArrayList<TransformableNode> transformableNodes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +60,9 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
+        anchorList = new ArrayList<>();
+        transformableNodes = new ArrayList<>();
+
         setContentView(R.layout.activity_main);
         removeBtn = findViewById(R.id.removeBtn);
         arFragment = (ArFragment) getSupportFragmentManager().findFragmentById(R.id.ux_fragment);
@@ -61,7 +70,23 @@ public class MainActivity extends AppCompatActivity {
         removeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                anchor.detach();
+//                anchor.detach();
+//                if((anchorList.size())<=0){
+//                    Toast.makeText(MainActivity.this, "No Anchors to Delete!", Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
+//                x = anchorList.get(anchorList.size()-1);
+//                x.detach();
+//                anchorList.remove(anchorList.size()-1);
+
+//                ((AnchorNode)andy.getParent()).getAnchor().detach();
+                if(transformableNodes.size()<=0){
+                    Toast.makeText(MainActivity.this, "No Anchors to Delete!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                y = transformableNodes.get(transformableNodes.size()-1);
+                ((AnchorNode)y.getParent()).getAnchor().detach();
+                transformableNodes.remove(transformableNodes.size()-1);
             }
         });
 
@@ -187,6 +212,54 @@ public class MainActivity extends AppCompatActivity {
         sofaNumber9.setContentDescription("SofaNumber9");
         sofaNumber9.setOnClickListener(view ->{addObject(Uri.parse("sofa+number+9.sfb"));});
         gallery.addView(sofaNumber9);
+
+        ImageView2 beds = new ImageView2(this);
+        beds.setImageResource(R.drawable.beds);
+        beds.setContentDescription("Beds");
+        beds.setOnClickListener(view ->{addObject(Uri.parse("bed.sfb"));});
+        gallery.addView(beds);
+
+        ImageView2 bailu = new ImageView2(this);
+        bailu.setImageResource(R.drawable.bailu);
+        bailu.setContentDescription("Bailu");
+        bailu.setOnClickListener(view ->{addObject(Uri.parse("bailu.sfb"));});
+        gallery.addView(bailu);
+
+        ImageView2 bs = new ImageView2(this);
+        bs.setImageResource(R.drawable.blacksofa);
+        bs.setContentDescription("Black Sofa");
+        bs.setOnClickListener(view ->{addObject(Uri.parse("blackSofa.sfb"));});
+        gallery.addView(bs);
+
+        ImageView2 europa = new ImageView2(this);
+        europa.setImageResource(R.drawable.europa);
+        europa.setContentDescription("europa");
+        europa.setOnClickListener(view ->{addObject(Uri.parse("europa.sfb"));});
+        gallery.addView(europa);
+
+        ImageView2 gra = new ImageView2(this);
+        gra.setImageResource(R.drawable.gra);
+        gra.setContentDescription("gra");
+        gra.setOnClickListener(view ->{addObject(Uri.parse("gra.sfb"));});
+        gallery.addView(gra);
+
+        ImageView2 ms = new ImageView2(this);
+        ms.setImageResource(R.drawable.meshseat);
+        ms.setContentDescription("ms");
+        ms.setOnClickListener(view ->{addObject(Uri.parse("meshseat.sfb"));});
+        gallery.addView(ms);
+
+        ImageView2 p = new ImageView2(this);
+        p.setImageResource(R.drawable.papilio);
+        p.setContentDescription("papilio");
+        p.setOnClickListener(view ->{addObject(Uri.parse("papilio.sfb"));});
+        gallery.addView(p);
+
+        ImageView2 w = new ImageView2(this);
+        w.setImageResource(R.drawable.whitechair);
+        w.setContentDescription("white chair");
+        w.setOnClickListener(view ->{addObject(Uri.parse("whitechair.sfb"));});
+        gallery.addView(w);
     }
 
     private void addObject(Uri model){
@@ -212,15 +285,19 @@ public class MainActivity extends AppCompatActivity {
 
                     // Create the Anchor.
                     anchor = hitResult.createAnchor();
+                    anchorList.add(anchor);
                     AnchorNode anchorNode = new AnchorNode(anchor);
                     anchorNode.setParent(arFragment.getArSceneView().getScene());
 
                     // Create the transformable andy and add it to the anchor.
                     TransformableNode andy = new TransformableNode(arFragment.getTransformationSystem());
                     andy.setRenderable(andyRenderable);
-                    andy.getScaleController().setMaxScale(25.0f);
+//                    andy.getScaleController().setMinScale(5.0f);
+                    andy.getScaleController().setMaxScale(15.0f);
                     andy.setParent(anchorNode);
                     andy.select();
+                    transformableNodes.add(andy);
+//                    ((AnchorNode)andy.getParent()).getAnchor().detach();
                 });
     }
 }

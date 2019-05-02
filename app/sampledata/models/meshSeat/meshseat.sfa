@@ -1,0 +1,197 @@
+{
+  animations: [
+    {
+      path: 'sampledata/models/meshSeat/meshseat.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'DE_TEA_AD_GRA_Material_04',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'DE_TEA_AD_GRA_Material_04',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'DE_TEA_AD_GRA_Material_03',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'DE_TEA_AD_GRA_Material_03',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'DE_TEA_AD_GRA_Material_02',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'DE_TEA_AD_GRA_Material_02',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'DE_TEA_AD_GRA_Material_01',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'DE_TEA_AD_GRA_Material_01',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/models/meshSeat/meshseat.fbx',
+    name: 'meshseat',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/meshSeat\\meshseat\\DE_TEA_AD_GRA_Material_04.jpg',
+      name: 'DE_TEA_AD_GRA_Material_04',
+      pipeline_name: '..\\..\\..\\Documents\\meshseat\\DE_TEA_AD_GRA_Material_04.jpg',
+    },
+    {
+      file: 'sampledata/models/meshSeat\\meshseat\\DE_TEA_AD_GRA_Material_03.jpg',
+      name: 'DE_TEA_AD_GRA_Material_03',
+      pipeline_name: '..\\..\\..\\Documents\\meshseat\\DE_TEA_AD_GRA_Material_03.jpg',
+    },
+    {
+      file: 'sampledata/models/meshSeat\\meshseat\\DE_TEA_AD_GRA_Material_02.jpg',
+      name: 'DE_TEA_AD_GRA_Material_02',
+      pipeline_name: '..\\..\\..\\Documents\\meshseat\\DE_TEA_AD_GRA_Material_02.jpg',
+    },
+    {
+      file: 'sampledata/models/meshSeat\\meshseat\\DE_TEA_AD_GRA_Material_01.png',
+      name: 'DE_TEA_AD_GRA_Material_01',
+      pipeline_name: '..\\..\\..\\Documents\\meshseat\\DE_TEA_AD_GRA_Material_01.png',
+    },
+  ],
+  version: '0.54:2',
+}

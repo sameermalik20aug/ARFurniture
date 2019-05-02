@@ -1,0 +1,106 @@
+{
+  animations: [
+    {
+      path: 'sampledata/models/pablio/papilio.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'EGO_2153790_BIG_1',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'EGO_2153790_BIG_1',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'metal',
+      parameters: [
+        {
+          baseColor: [
+            0.40000000000000002,
+            0.40000000000000002,
+            0.40000000000000002,
+            1,
+          ],
+        },
+        {
+          baseColorMap: null,
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/models/pablio/papilio.fbx',
+    name: 'papilio',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/pablio\\papilio\\EGO_2153790_BIG_1.jpg',
+      name: 'EGO_2153790_BIG_1',
+      pipeline_name: '..\\..\\..\\Documents\\papilio\\EGO_2153790_BIG_1.jpg',
+    },
+  ],
+  version: '0.54:2',
+}
