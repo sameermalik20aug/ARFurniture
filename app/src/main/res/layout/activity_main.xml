@@ -29,7 +29,16 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Remove"
+            android:layout_margin="2dp"
             android:id="@+id/removeBtn"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="capture"
+            android:layout_margin="2dp"
+            android:id="@+id/capBtn"
             />
         <HorizontalScrollView
             android:layout_width="wrap_content"
