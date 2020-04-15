@@ -22,6 +22,7 @@ import android.view.MotionEvent;
 import android.view.PixelCopy;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ArFragment arFragment;
     private ModelRenderable andyRenderable;
-    private Button removeBtn,captureBtn;
+    private ImageButton removeBtn,captureBtn;
     private Anchor anchor;
     private Anchor x;
     private TransformableNode y;
