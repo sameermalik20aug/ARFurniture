@@ -1,0 +1,99 @@
+{
+  animations: [
+    {
+      path: 'sampledata/models/barts/Natuzzi-tempo-2834.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'M_150010BX',
+      parameters: [
+        {
+          baseColor: [
+            0.764706,
+            0.62745099999999998,
+            0.258824,
+            1,
+          ],
+        },
+        {
+          baseColorMap: null,
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'Color_M08',
+      parameters: [
+        {
+          baseColor: [
+            0.117647,
+            0.117647,
+            0.117647,
+            1,
+          ],
+        },
+        {
+          baseColorMap: null,
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/models/barts/Natuzzi-tempo-2834.fbx',
+    name: 'Natuzzi-tempo-2834',
+    recenter: 'root',
+  },
+  version: '0.54:2',
+}

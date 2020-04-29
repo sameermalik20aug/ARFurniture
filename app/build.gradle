@@ -193,3 +193,8 @@ sceneform.asset('sampledata/models/Beds/bed.fbx',
         'default',
         'sampledata/models/Beds/bed.sfa',
         'src/main/assets/bed')
+
+sceneform.asset('sampledata/models/barts/Natuzzi-tempo-2834.fbx',
+        'default',
+        'sampledata/models/barts/Natuzzi-tempo-2834.sfa',
+        'src/main/assets/natuzzi')

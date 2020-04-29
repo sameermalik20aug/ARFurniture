@@ -218,6 +218,12 @@ public class MainActivity extends AppCompatActivity {
 //        armchair.setOnClickListener(view ->{addObject(Uri.parse("Armchair_01.sfb"));});
 //        gallery.addView(armchair);
 //
+        ImageView2 natuzzi = new ImageView2(this);
+        natuzzi.setImageResource(R.drawable.natuzzithumb);
+        natuzzi.setContentDescription("natuzzi");
+        natuzzi.setOnClickListener(view ->{addObject(Uri.parse("natuzzi.sfb"));});
+        gallery.addView(natuzzi);
+
         ImageView2 bed = new ImageView2(this);
         bed.setImageResource(R.drawable.bed);
         bed.setContentDescription("bed");
