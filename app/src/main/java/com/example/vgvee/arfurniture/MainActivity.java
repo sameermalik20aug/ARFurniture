@@ -11,11 +11,16 @@ import android.os.Build;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.HandlerThread;
+
+import android.os.Bundle;
+
 import android.support.design.widget.Snackbar;
 import android.support.v4.content.FileProvider;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.PagerSnapHelper;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SnapHelper;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
@@ -26,6 +31,9 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+
+
+
 
 import com.google.ar.core.Anchor;
 import com.google.ar.core.Frame;
@@ -46,8 +54,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
-import java.util.concurrent.CompletableFuture;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -57,6 +64,11 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
     private static final double MIN_OPENGL_VERSION = 3.0;
+
+    RecyclerView recyclerView;
+    ArrayList<Files> contents;
+    FilesAdapter filesAdapter;
+    LinearLayoutManager llm;
 
     private ArFragment arFragment;
     private ModelRenderable andyRenderable;
@@ -83,6 +95,30 @@ public class MainActivity extends AppCompatActivity {
         removeBtn = findViewById(R.id.removeBtn);
         captureBtn = findViewById(R.id.capBtn);
         arFragment = (ArFragment) getSupportFragmentManager().findFragmentById(R.id.ux_fragment);
+        recyclerView = findViewById(R.id.rView);
+        llm = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
+        contents = new ArrayList<>();
+
+        contents.add(new Files(R.drawable.apooltable,"A Pool Table","Dua Furnitures","20.000",Uri.parse("apooltable.sfb")));
+        contents.add(new Files(R.drawable.airhockeytable,"An AirHockey Table","Dua Furnitures","30.000",Uri.parse("airhockeytable.sfb")));
+        contents.add(new Files(R.drawable.atv,"Tv and Table","Dua Furnitures","80.000",Uri.parse("atv.sfb")));
+        contents.add(new Files(R.drawable.apooltable,"A Pool Table","Dua Furnitures","20.000",Uri.parse("apooltable.sfb")));
+        contents.add(new Files(R.drawable.apooltable,"A Pool Table","Dua Furnitures","20.000",Uri.parse("apooltable.sfb")));
+        contents.add(new Files(R.drawable.apooltable,"A Pool Table","Dua Furnitures","20.000",Uri.parse("apooltable.sfb")));
+        contents.add(new Files(R.drawable.apooltable,"A Pool Table","Dua Furnitures","20.000",Uri.parse("apooltable.sfb")));
+
+        filesAdapter = new FilesAdapter(this,contents);
+        SnapHelper snapHelper = new PagerSnapHelper();
+
+        recyclerView.setLayoutManager(llm);
+        snapHelper.attachToRecyclerView(recyclerView);
+        recyclerView.setAdapter(filesAdapter);
+
+
+
+
+
+
 
         captureBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,8 +149,6 @@ public class MainActivity extends AppCompatActivity {
                 transformableNodes.remove(transformableNodes.size()-1);
             }
         });
-
-        initializeGallery();
     }
 
 
@@ -209,7 +243,7 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    private void initializeGallery() {
+   /* private void initializeGallery() {
         LinearLayout gallery = findViewById(R.id.gallery_layout);
 
 //        ImageView2 armchair = new ImageView2(this);
@@ -391,11 +425,11 @@ public class MainActivity extends AppCompatActivity {
         atv.setContentDescription("a tv");
         atv.setOnClickListener(view ->{addObject(Uri.parse("atv.sfb"));});
         gallery.addView(atv);
-
-
     }
 
-    private void addObject(Uri model){
+    */
+
+    public void addObject(Uri model){
         ModelRenderable.builder()
                 .setSource(this, model)
                 .build()
