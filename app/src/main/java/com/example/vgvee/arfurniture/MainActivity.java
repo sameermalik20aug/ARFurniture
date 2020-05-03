@@ -361,6 +361,38 @@ public class MainActivity extends AppCompatActivity {
         w.setContentDescription("white chair");
         w.setOnClickListener(view ->{addObject(Uri.parse("whitechair.sfb"));});
         gallery.addView(w);
+
+        ImageView2 abs = new ImageView2(this);
+        abs.setImageResource(R.drawable.abookshelf);
+        abs.setContentDescription("a book shelf");
+        abs.setOnClickListener(view ->{addObject(Uri.parse("abookshelf.sfb"));});
+        gallery.addView(abs);
+
+        ImageView2 ach = new ImageView2(this);
+        ach.setImageResource(R.drawable.achair);
+        ach.setContentDescription("achair");
+        ach.setOnClickListener(view ->{addObject(Uri.parse("achair.sfb"));});
+        gallery.addView(ach);
+
+        ImageView2 air = new ImageView2(this);
+        air.setImageResource(R.drawable.airhockeytable);
+        air.setContentDescription("airchair");
+        air.setOnClickListener(view ->{addObject(Uri.parse("airhockeytable.sfb"));});
+        gallery.addView(air);
+
+        ImageView2 pool = new ImageView2(this);
+        pool.setImageResource(R.drawable.apooltable);
+        pool.setContentDescription("pool table");
+        pool.setOnClickListener(view ->{addObject(Uri.parse("apooltable.sfb"));});
+        gallery.addView(pool);
+
+        ImageView2 atv = new ImageView2(this);
+        atv.setImageResource(R.drawable.atv);
+        atv.setContentDescription("a tv");
+        atv.setOnClickListener(view ->{addObject(Uri.parse("atv.sfb"));});
+        gallery.addView(atv);
+
+
     }
 
     private void addObject(Uri model){
