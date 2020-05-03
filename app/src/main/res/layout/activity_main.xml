@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             app:cardCornerRadius="10dp"
             app:cardBackgroundColor="#FFFFFF"
-            android:layout_margin="10dp"
+            android:layout_margin="5dp"
             >
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -40,24 +40,34 @@
                 >
 
                 <ImageButton
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_margin="10dp"
-                    android:src="@drawable/remove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/ic_del"
                     android:id="@+id/removeBtn"
                     android:background="#FFFFFF"
                     android:layout_alignParentLeft="true"
                     />
 
                 <ImageButton
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="capture"
                     android:layout_margin="10dp"
                     android:id="@+id/capBtn"
                     android:background="#FFFFFF"
-                    android:src="@drawable/capture"
+                    android:src="@drawable/cap"
                     android:layout_centerHorizontal="true"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/ic_add"
+                    android:id="@+id/addBtn"
+                    android:background="#FFFFFF"
+                    android:layout_alignParentRight="true"
                     />
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/rView"
@@ -67,7 +77,7 @@
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="20dp"
-                    android:layout_below="@+id/removeBtn"
+                    android:layout_below="@+id/capBtn"
                     />
 
             </RelativeLayout>

@@ -99,13 +99,33 @@ public class MainActivity extends AppCompatActivity {
         llm = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
         contents = new ArrayList<>();
 
+        contents.add(new Files(R.drawable.a_pool_table,"Pool Table","Toys and Rides","25.000",Uri.parse("apooltable.sfb")));
+        contents.add(new Files(R.drawable.air_hockey_table,"AirHockey Table","Toys and Rides","30.000",Uri.parse("airhockeytable.sfb")));
+        contents.add(new Files(R.drawable.a_tv_set,"Tv with Table","Dua Furniture","85.000",Uri.parse("atv.sfb")));
+        contents.add(new Files(R.drawable.achair_black_chair,"Office Chair (Black)","Grover Furniture","7.000",Uri.parse("achair.sfb")));
+        contents.add(new Files(R.drawable.a_book_shelf,"Book Shelf","Grover Furniture","11.000",Uri.parse("abookshelf.sfb")));
+        contents.add(new Files(R.drawable.papilio_red_chair,"Chair (Red)","Ikea","15.000",Uri.parse("papilio.sfb")));
+        contents.add(new Files(R.drawable.meshseat_black_chair,"Mesh Seat","Ikea","8.000",Uri.parse("meshseat.sfb")));
+        contents.add(new Files(R.drawable.gra_sofa,"Chair (Light Grey)","Dua Furniture","18.000",Uri.parse("gra.sfb")));
+        contents.add(new Files(R.drawable.black_sofa,"Sofa (Black)","Sharma Furniture","30.000",Uri.parse("blackSofa.sfb")));
+        contents.add(new Files(R.drawable.grey_bed,"Double Bed (Grey)","Sharma Furniture","47.000",Uri.parse("bed.sfb")));
+        contents.add(new Files(R.drawable.sofanumber9_white_sofa,"Sofa (White)","Gulati Furniture","40.000",Uri.parse("sofa+number+9.sfb")));
+        contents.add(new Files(R.drawable.lc363_grey_sofa,"Sofa (Grey)","Gulati Furniture","42.000",Uri.parse("Mare+LC363.sfb")));
+        contents.add(new Files(R.drawable.lc351_grey_sofa,"Sofa (Grey)","Sharma Furniture","40.000",Uri.parse("Mare+LC351.sfb")));
+        contents.add(new Files(R.drawable.lc309_grey_sofa,"Sofa (Grey)","Gulati Furniture","17.000",Uri.parse("Mare+LC309.sfb")));
+        contents.add(new Files(R.drawable.lc306_grey_sofa,"Couch (Grey)","Grover Furniture","32.000",Uri.parse("Mare+LC306.sfb")));
+        contents.add(new Files(R.drawable.lc302_grey_sofa,"Sofa (Grey)","Sharma Furniture","20.000",Uri.parse("Mare+LC302.sfb")));
+        contents.add(new Files(R.drawable.couchwide_grey,"Couch (Grey)","Gulati Furniture","21.000",Uri.parse("CouchWide.sfb")));
+        contents.add(new Files(R.drawable.natuzzi_yellow_sofa,"Sofa Set (Yellow)","Sharma Furniture","55.000",Uri.parse("natuzzi.sfb")));
+        contents.add(new Files(R.drawable.blue_bed,"Bed","Google","25.000",Uri.parse("Bed_01.sfb")));
+       /* contents.add(new Files(R.drawable.apooltable,"A Pool Table","Dua Furnitures","20.000",Uri.parse("apooltable.sfb")));
         contents.add(new Files(R.drawable.apooltable,"A Pool Table","Dua Furnitures","20.000",Uri.parse("apooltable.sfb")));
-        contents.add(new Files(R.drawable.airhockeytable,"An AirHockey Table","Dua Furnitures","30.000",Uri.parse("airhockeytable.sfb")));
-        contents.add(new Files(R.drawable.atv,"Tv and Table","Dua Furnitures","80.000",Uri.parse("atv.sfb")));
         contents.add(new Files(R.drawable.apooltable,"A Pool Table","Dua Furnitures","20.000",Uri.parse("apooltable.sfb")));
-        contents.add(new Files(R.drawable.apooltable,"A Pool Table","Dua Furnitures","20.000",Uri.parse("apooltable.sfb")));
-        contents.add(new Files(R.drawable.apooltable,"A Pool Table","Dua Furnitures","20.000",Uri.parse("apooltable.sfb")));
-        contents.add(new Files(R.drawable.apooltable,"A Pool Table","Dua Furnitures","20.000",Uri.parse("apooltable.sfb")));
+*/
+
+
+
+
 
         filesAdapter = new FilesAdapter(this,contents);
         SnapHelper snapHelper = new PagerSnapHelper();
@@ -113,10 +133,6 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(llm);
         snapHelper.attachToRecyclerView(recyclerView);
         recyclerView.setAdapter(filesAdapter);
-
-
-
-
 
 
 
@@ -252,16 +268,12 @@ public class MainActivity extends AppCompatActivity {
 //        armchair.setOnClickListener(view ->{addObject(Uri.parse("Armchair_01.sfb"));});
 //        gallery.addView(armchair);
 //
-        ImageView2 natuzzi = new ImageView2(this);
-        natuzzi.setImageResource(R.drawable.natuzzithumb);
-        natuzzi.setContentDescription("natuzzi");
-        natuzzi.setOnClickListener(view ->{addObject(Uri.parse("natuzzi.sfb"));});
-        gallery.addView(natuzzi);
+
 
         ImageView2 bed = new ImageView2(this);
         bed.setImageResource(R.drawable.bed);
         bed.setContentDescription("bed");
-        bed.setOnClickListener(view ->{addObject(Uri.parse("Bed_01.sfb"));});
+        bed.setOnClickListener(view ->{addObject(Uri.parse(""));});
         gallery.addView(bed);
 //
 //        ImageView2 bedroom = new ImageView2(this);
@@ -294,11 +306,7 @@ public class MainActivity extends AppCompatActivity {
 //        couchred.setOnClickListener(view ->{addObject(Uri.parse("CouchRed.sfb"));});
 //        gallery.addView(couchred);
 //
-        ImageView2 couchwide = new ImageView2(this);
-        couchwide.setImageResource(R.drawable.couchwide);
-        couchwide.setContentDescription("couchwide");
-        couchwide.setOnClickListener(view ->{addObject(Uri.parse("CouchWide.sfb"));});
-        gallery.addView(couchwide);
+
 //
 //        ImageView2 credenza = new ImageView2(this);
 //        credenza.setImageResource(R.drawable.credenza);
@@ -312,119 +320,14 @@ public class MainActivity extends AppCompatActivity {
 //        tabletennis.setOnClickListener(view ->{addObject(Uri.parse("TTtable.sfb"));});
 //        gallery.addView(tabletennis);
 
-        ImageView2 lc302 = new ImageView2(this);
-        lc302.setImageResource(R.drawable.lc302);
-        lc302.setContentDescription("LC302");
-        lc302.setOnClickListener(view ->{addObject(Uri.parse("Mare+LC302.sfb"));});
-        gallery.addView(lc302);
 
-        ImageView2 lc306 = new ImageView2(this);
-        lc306.setImageResource(R.drawable.lc306);
-        lc306.setContentDescription("LC306");
-        lc306.setOnClickListener(view ->{addObject(Uri.parse("Mare+LC306.sfb"));});
-        gallery.addView(lc306);
 
-        ImageView2 lc309 = new ImageView2(this);
-        lc309.setImageResource(R.drawable.lc309);
-        lc309.setContentDescription("LC309");
-        lc309.setOnClickListener(view ->{addObject(Uri.parse("Mare+LC309.sfb"));});
-        gallery.addView(lc309);
 
-        ImageView2 lc351 = new ImageView2(this);
-        lc351.setImageResource(R.drawable.lc351);
-        lc351.setContentDescription("LC351");
-        lc351.setOnClickListener(view ->{addObject(Uri.parse("Mare+LC351.sfb"));});
-        gallery.addView(lc351);
 
-        ImageView2 lc363 = new ImageView2(this);
-        lc363.setImageResource(R.drawable.lc363);
-        lc363.setContentDescription("LC363");
-        lc363.setOnClickListener(view ->{addObject(Uri.parse("Mare+LC363.sfb"));});
-        gallery.addView(lc363);
 
-        ImageView2 sofaNumber9 = new ImageView2(this);
-        sofaNumber9.setImageResource(R.drawable.sofanumber9);
-        sofaNumber9.setContentDescription("SofaNumber9");
-        sofaNumber9.setOnClickListener(view ->{addObject(Uri.parse("sofa+number+9.sfb"));});
-        gallery.addView(sofaNumber9);
 
-        ImageView2 beds = new ImageView2(this);
-        beds.setImageResource(R.drawable.beds);
-        beds.setContentDescription("Beds");
-        beds.setOnClickListener(view ->{addObject(Uri.parse("bed.sfb"));});
-        gallery.addView(beds);
 
-        ImageView2 bailu = new ImageView2(this);
-        bailu.setImageResource(R.drawable.bailu);
-        bailu.setContentDescription("Bailu");
-        bailu.setOnClickListener(view ->{addObject(Uri.parse("bailu.sfb"));});
-        gallery.addView(bailu);
 
-        ImageView2 bs = new ImageView2(this);
-        bs.setImageResource(R.drawable.blacksofa);
-        bs.setContentDescription("Black Sofa");
-        bs.setOnClickListener(view ->{addObject(Uri.parse("blackSofa.sfb"));});
-        gallery.addView(bs);
-
-        ImageView2 europa = new ImageView2(this);
-        europa.setImageResource(R.drawable.europa);
-        europa.setContentDescription("europa");
-        europa.setOnClickListener(view ->{addObject(Uri.parse("europa.sfb"));});
-        gallery.addView(europa);
-
-        ImageView2 gra = new ImageView2(this);
-        gra.setImageResource(R.drawable.gra);
-        gra.setContentDescription("gra");
-        gra.setOnClickListener(view ->{addObject(Uri.parse("gra.sfb"));});
-        gallery.addView(gra);
-
-        ImageView2 ms = new ImageView2(this);
-        ms.setImageResource(R.drawable.meshseat);
-        ms.setContentDescription("ms");
-        ms.setOnClickListener(view ->{addObject(Uri.parse("meshseat.sfb"));});
-        gallery.addView(ms);
-
-        ImageView2 p = new ImageView2(this);
-        p.setImageResource(R.drawable.papilio);
-        p.setContentDescription("papilio");
-        p.setOnClickListener(view ->{addObject(Uri.parse("papilio.sfb"));});
-        gallery.addView(p);
-
-        ImageView2 w = new ImageView2(this);
-        w.setImageResource(R.drawable.whitechair);
-        w.setContentDescription("white chair");
-        w.setOnClickListener(view ->{addObject(Uri.parse("whitechair.sfb"));});
-        gallery.addView(w);
-
-        ImageView2 abs = new ImageView2(this);
-        abs.setImageResource(R.drawable.abookshelf);
-        abs.setContentDescription("a book shelf");
-        abs.setOnClickListener(view ->{addObject(Uri.parse("abookshelf.sfb"));});
-        gallery.addView(abs);
-
-        ImageView2 ach = new ImageView2(this);
-        ach.setImageResource(R.drawable.achair);
-        ach.setContentDescription("achair");
-        ach.setOnClickListener(view ->{addObject(Uri.parse("achair.sfb"));});
-        gallery.addView(ach);
-
-        ImageView2 air = new ImageView2(this);
-        air.setImageResource(R.drawable.airhockeytable);
-        air.setContentDescription("airchair");
-        air.setOnClickListener(view ->{addObject(Uri.parse("airhockeytable.sfb"));});
-        gallery.addView(air);
-
-        ImageView2 pool = new ImageView2(this);
-        pool.setImageResource(R.drawable.apooltable);
-        pool.setContentDescription("pool table");
-        pool.setOnClickListener(view ->{addObject(Uri.parse("apooltable.sfb"));});
-        gallery.addView(pool);
-
-        ImageView2 atv = new ImageView2(this);
-        atv.setImageResource(R.drawable.atv);
-        atv.setContentDescription("a tv");
-        atv.setOnClickListener(view ->{addObject(Uri.parse("atv.sfb"));});
-        gallery.addView(atv);
     }
 
     */
