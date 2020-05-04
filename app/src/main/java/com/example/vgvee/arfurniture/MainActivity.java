@@ -16,6 +16,7 @@ import android.os.Bundle;
 
 import android.support.design.widget.Snackbar;
 import android.support.v4.content.FileProvider;
+import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.PagerSnapHelper;
@@ -72,10 +73,11 @@ public class MainActivity extends AppCompatActivity {
 
     private ArFragment arFragment;
     private ModelRenderable andyRenderable;
-    private ImageButton removeBtn,captureBtn;
+    private ImageButton removeBtn,captureBtn,addBtn;
     private Anchor anchor;
     private Anchor x;
     private TransformableNode y;
+    private NestedScrollView nestedScrollView;
 
     ArrayList<Anchor> anchorList;
     ArrayList<TransformableNode> transformableNodes;
@@ -94,33 +96,34 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         removeBtn = findViewById(R.id.removeBtn);
         captureBtn = findViewById(R.id.capBtn);
+        addBtn = findViewById(R.id.addBtn);
         arFragment = (ArFragment) getSupportFragmentManager().findFragmentById(R.id.ux_fragment);
         recyclerView = findViewById(R.id.rView);
         llm = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
         contents = new ArrayList<>();
 
-        contents.add(new Files(R.drawable.a_pool_table,"Pool Table","Toys and Rides","25.000",Uri.parse("apooltable.sfb")));
-        contents.add(new Files(R.drawable.air_hockey_table,"AirHockey Table","Toys and Rides","30.000",Uri.parse("airhockeytable.sfb")));
-        contents.add(new Files(R.drawable.a_tv_set,"Tv with Table","Dua Furniture","85.000",Uri.parse("atv.sfb")));
-        contents.add(new Files(R.drawable.achair_black_chair,"Office Chair (Black)","Grover Furniture","7.000",Uri.parse("achair.sfb")));
-        contents.add(new Files(R.drawable.a_book_shelf,"Book Shelf","Grover Furniture","11.000",Uri.parse("abookshelf.sfb")));
-        contents.add(new Files(R.drawable.papilio_red_chair,"Chair (Red)","Ikea","15.000",Uri.parse("papilio.sfb")));
-        contents.add(new Files(R.drawable.meshseat_black_chair,"Mesh Seat","Ikea","8.000",Uri.parse("meshseat.sfb")));
-        contents.add(new Files(R.drawable.gra_sofa,"Chair (Light Grey)","Dua Furniture","18.000",Uri.parse("gra.sfb")));
-        contents.add(new Files(R.drawable.black_sofa,"Sofa (Black)","Sharma Furniture","30.000",Uri.parse("blackSofa.sfb")));
-        contents.add(new Files(R.drawable.grey_bed,"Double Bed (Grey)","Sharma Furniture","47.000",Uri.parse("bed.sfb")));
-        contents.add(new Files(R.drawable.sofanumber9_white_sofa,"Sofa (White)","Gulati Furniture","40.000",Uri.parse("sofa+number+9.sfb")));
-        contents.add(new Files(R.drawable.lc363_grey_sofa,"Sofa (Grey)","Gulati Furniture","42.000",Uri.parse("Mare+LC363.sfb")));
-        contents.add(new Files(R.drawable.lc351_grey_sofa,"Sofa (Grey)","Sharma Furniture","40.000",Uri.parse("Mare+LC351.sfb")));
-        contents.add(new Files(R.drawable.lc309_grey_sofa,"Sofa (Grey)","Gulati Furniture","17.000",Uri.parse("Mare+LC309.sfb")));
-        contents.add(new Files(R.drawable.lc306_grey_sofa,"Couch (Grey)","Grover Furniture","32.000",Uri.parse("Mare+LC306.sfb")));
-        contents.add(new Files(R.drawable.lc302_grey_sofa,"Sofa (Grey)","Sharma Furniture","20.000",Uri.parse("Mare+LC302.sfb")));
-        contents.add(new Files(R.drawable.couchwide_grey,"Couch (Grey)","Gulati Furniture","21.000",Uri.parse("CouchWide.sfb")));
-        contents.add(new Files(R.drawable.natuzzi_yellow_sofa,"Sofa Set (Yellow)","Sharma Furniture","55.000",Uri.parse("natuzzi.sfb")));
-        contents.add(new Files(R.drawable.blue_bed,"Bed","Google","25.000",Uri.parse("Bed_01.sfb")));
-        contents.add(new Files(R.drawable.a_beanbag,"Beanbag (Orange)","Ikea","8.000",Uri.parse("beanbag.sfb")));
-        contents.add(new Files(R.drawable.tablelargerectang,"A Table","Sharma Furniture","15.000",Uri.parse("Table_Large_Rectangular_01.sfb")));
-        contents.add(new Files(R.drawable.foosball_table,"Foosball Table","Toys and Rides","32.000",Uri.parse("122186.sfb")));
+        contents.add(new Files(R.drawable.a_pool_table,"Pool Table","Toys and Rides","25,000",Uri.parse("apooltable.sfb")));
+        contents.add(new Files(R.drawable.air_hockey_table,"AirHockey Table","Toys and Rides","30,000",Uri.parse("airhockeytable.sfb")));
+        contents.add(new Files(R.drawable.a_tv_set,"Tv with Table","Dua Furniture","85,000",Uri.parse("atv.sfb")));
+        contents.add(new Files(R.drawable.achair_black_chair,"Office Chair (Black)","Grover Furniture","7,000",Uri.parse("achair.sfb")));
+        contents.add(new Files(R.drawable.a_book_shelf,"Book Shelf","Grover Furniture","11,000",Uri.parse("abookshelf.sfb")));
+        contents.add(new Files(R.drawable.papilio_red_chair,"Chair (Red)","Ikea","15,000",Uri.parse("papilio.sfb")));
+        contents.add(new Files(R.drawable.meshseat_black_chair,"Mesh Seat","Ikea","8,000",Uri.parse("meshseat.sfb")));
+        contents.add(new Files(R.drawable.gra_sofa,"Chair (Light Grey)","Dua Furniture","18,000",Uri.parse("gra.sfb")));
+        contents.add(new Files(R.drawable.black_sofa,"Sofa (Black)","Sharma Furniture","30,000",Uri.parse("blackSofa.sfb")));
+        contents.add(new Files(R.drawable.grey_bed,"Double Bed (Grey)","Sharma Furniture","47,000",Uri.parse("bed.sfb")));
+        contents.add(new Files(R.drawable.sofanumber9_white_sofa,"Sofa (White)","Gulati Furniture","40,000",Uri.parse("sofa+number+9.sfb")));
+        contents.add(new Files(R.drawable.lc363_grey_sofa,"Sofa (Grey)","Gulati Furniture","42,000",Uri.parse("Mare+LC363.sfb")));
+        contents.add(new Files(R.drawable.lc351_grey_sofa,"Sofa (Grey)","Sharma Furniture","40,000",Uri.parse("Mare+LC351.sfb")));
+        contents.add(new Files(R.drawable.lc309_grey_sofa,"Sofa (Grey)","Gulati Furniture","17,000",Uri.parse("Mare+LC309.sfb")));
+        contents.add(new Files(R.drawable.lc306_grey_sofa,"Couch (Grey)","Grover Furniture","32,000",Uri.parse("Mare+LC306.sfb")));
+        contents.add(new Files(R.drawable.lc302_grey_sofa,"Sofa (Grey)","Sharma Furniture","20,000",Uri.parse("Mare+LC302.sfb")));
+        contents.add(new Files(R.drawable.couchwide_grey,"Couch (Grey)","Gulati Furniture","21,000",Uri.parse("CouchWide.sfb")));
+        contents.add(new Files(R.drawable.natuzzi_yellow_sofa,"Sofa Set (Yellow)","Sharma Furniture","55,000",Uri.parse("natuzzi.sfb")));
+        contents.add(new Files(R.drawable.blue_bed,"Bed","Google","25,000",Uri.parse("Bed_01.sfb")));
+        contents.add(new Files(R.drawable.a_beanbag,"Beanbag (Orange)","Ikea","8,000",Uri.parse("beanbag.sfb")));
+        contents.add(new Files(R.drawable.tablelargerectang,"A Table","Sharma Furniture","15,000",Uri.parse("Table_Large_Rectangular_01.sfb")));
+        contents.add(new Files(R.drawable.foosball_table,"Foosball Table","Toys and Rides","32,000",Uri.parse("122186.sfb")));
 
 
 

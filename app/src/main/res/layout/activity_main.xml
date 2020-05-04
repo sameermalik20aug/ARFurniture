@@ -20,8 +20,10 @@
 
     <android.support.v4.widget.NestedScrollView
 
+        android:id="@+id/nsView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:background="#00000000"
         app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
         app:behavior_peekHeight="120dp"
