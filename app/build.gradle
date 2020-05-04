@@ -224,3 +224,19 @@ sceneform.asset('sampledata/models/apooltable/Game_Pool_Table_53x91.fbx',
         'default',
         'sampledata/models/apooltable/Game_Pool_Table_53x91.sfa',
         'src/main/assets/apooltable')
+
+//sceneform.asset('sampledata/models/bedricher/bed_richter.fbx',
+//        'default',
+//        'sampledata/models/bedricher/bed_richter.sfa',
+//        'src/main/assets/bed_richter.sfb')
+
+
+sceneform.asset('sampledata/models/game_foosball_table/122186.fbx',
+        'default',
+        'sampledata/models/game_foosball_table/122186.sfa',
+        'src/main/assets/122186')
+
+sceneform.asset('sampledata/models/beanbag/beanbag.fbx',
+        'default',
+        'sampledata/models/beanbag/beanbag.sfa',
+        'src/main/assets/beanbag')

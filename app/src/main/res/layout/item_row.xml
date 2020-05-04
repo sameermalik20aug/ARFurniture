@@ -4,21 +4,24 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardBackgroundColor="#FFFFFF"
-    android:elevation="20dp"
-    android:layout_margin="10dp"
-    app:cardCornerRadius="10dp"
+    android:layout_margin="7dp"
+    android:elevation="50dp"
+    app:cardCornerRadius="11dp"
     >
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="#FFFFFF"
         >
 
         <ImageView
             android:id="@+id/iView"
             android:layout_width="200dp"
             android:layout_height="250dp"
-            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             />
 
         <TextView
@@ -26,9 +29,11 @@
             android:layout_below="@+id/iView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:textSize="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="24dp"
             android:text="Hello There"
+            android:fontFamily="@font/roboto"
             android:textColor="#222222"
             />
 
@@ -36,16 +41,15 @@
             android:id="@+id/provider"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:text="provider"
             android:layout_below="@+id/name"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/roboto"
+            android:text="provider"
             android:textColor="#222222"
-            />
+            android:textSize="17dp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/price"
@@ -54,6 +58,7 @@
             android:layout_below="@+id/provider"
             android:textSize="15dp"
             android:text="Price is"
+            android:fontFamily="@font/roboto"
             android:textColor="#222222"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"

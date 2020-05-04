@@ -118,12 +118,9 @@ public class MainActivity extends AppCompatActivity {
         contents.add(new Files(R.drawable.couchwide_grey,"Couch (Grey)","Gulati Furniture","21.000",Uri.parse("CouchWide.sfb")));
         contents.add(new Files(R.drawable.natuzzi_yellow_sofa,"Sofa Set (Yellow)","Sharma Furniture","55.000",Uri.parse("natuzzi.sfb")));
         contents.add(new Files(R.drawable.blue_bed,"Bed","Google","25.000",Uri.parse("Bed_01.sfb")));
-       /* contents.add(new Files(R.drawable.apooltable,"A Pool Table","Dua Furnitures","20.000",Uri.parse("apooltable.sfb")));
-        contents.add(new Files(R.drawable.apooltable,"A Pool Table","Dua Furnitures","20.000",Uri.parse("apooltable.sfb")));
-        contents.add(new Files(R.drawable.apooltable,"A Pool Table","Dua Furnitures","20.000",Uri.parse("apooltable.sfb")));
-*/
-
-
+        contents.add(new Files(R.drawable.a_beanbag,"Beanbag (Orange)","Ikea","8.000",Uri.parse("beanbag.sfb")));
+        contents.add(new Files(R.drawable.tablelargerectang,"A Table","Sharma Furniture","15.000",Uri.parse("Table_Large_Rectangular_01.sfb")));
+        contents.add(new Files(R.drawable.foosball_table,"Foosball Table","Toys and Rides","32.000",Uri.parse("122186.sfb")));
 
 
 
