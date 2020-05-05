@@ -55,6 +55,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -332,6 +333,11 @@ public class MainActivity extends AppCompatActivity {
 
     */
 
+    private android.graphics.Point getScreenCenter() {
+        View vw = findViewById(android.R.id.content);
+        return new android.graphics.Point(vw.getWidth()/2, vw.getHeight()/2);
+    }
+
     public void addObject(Uri model){
         ModelRenderable.builder()
                 .setSource(this, model)
@@ -346,28 +352,63 @@ public class MainActivity extends AppCompatActivity {
                             return null;
                         });
 
-        arFragment.setOnTapArPlaneListener(
-                (HitResult hitResult, Plane plane, MotionEvent motionEvent) -> {
-                    if (andyRenderable == null) {
-                        Toast.makeText(this, "Select a model to load", Toast.LENGTH_SHORT).show();
-                        return;
+//        arFragment.setOnTapArPlaneListener(
+//                (HitResult hitResult, Plane plane, MotionEvent motionEvent) -> {
+//                    if (andyRenderable == null) {
+//                        Toast.makeText(this, "Select a model to load", Toast.LENGTH_SHORT).show();
+//                        return;
+//                    }
+//
+//                    // Create the Anchor.
+//                    anchor = hitResult.createAnchor();
+//                    anchorList.add(anchor);
+//                    AnchorNode anchorNode = new AnchorNode(anchor);
+//                    anchorNode.setParent(arFragment.getArSceneView().getScene());
+//
+//                    // Create the transformable andy and add it to the anchor.
+//                    TransformableNode andy = new TransformableNode(arFragment.getTransformationSystem());
+//                    andy.setRenderable(andyRenderable);
+//    //                    andy.getScaleController().setMinScale(5.0f);
+//                    andy.getScaleController().setMaxScale(15.0f);
+//                    andy.setParent(anchorNode);
+//                    andy.select();
+//                    transformableNodes.add(andy);
+//    //                    ((AnchorNode)andy.getParent()).getAnchor().detach();
+//                });
+
+        addBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Frame frame = arFragment.getArSceneView().getArFrame();
+                android.graphics.Point pt = getScreenCenter();
+                if (andyRenderable == null) {
+                    Toast.makeText(MainActivity.this, "Select a model to load", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if(frame != null){
+                    List<HitResult> hits = frame.hitTest(pt.x, pt.y);
+                    for (HitResult hit : hits) {
+                        Trackable trackable = hit.getTrackable();
+                        if (trackable instanceof Plane &&
+                                ((Plane) trackable).isPoseInPolygon(hit.getHitPose())) {
+//                    modelLoader.loadModel(hit.createAnchor(), model);
+                            anchor = hit.createAnchor();
+                            anchorList.add(anchor);
+                            AnchorNode anchorNode = new AnchorNode();
+                            anchorNode.setParent(arFragment.getArSceneView().getScene());
+
+                            TransformableNode andy = new TransformableNode(arFragment.getTransformationSystem());
+                            andy.setRenderable(andyRenderable);
+                            andy.getScaleController().setMaxScale(15.0f);
+                            andy.setParent(anchorNode);
+                            andy.select();
+                            transformableNodes.add(andy);
+                            break;
+
+                        }
                     }
-
-                    // Create the Anchor.
-                    anchor = hitResult.createAnchor();
-                    anchorList.add(anchor);
-                    AnchorNode anchorNode = new AnchorNode(anchor);
-                    anchorNode.setParent(arFragment.getArSceneView().getScene());
-
-                    // Create the transformable andy and add it to the anchor.
-                    TransformableNode andy = new TransformableNode(arFragment.getTransformationSystem());
-                    andy.setRenderable(andyRenderable);
-//                    andy.getScaleController().setMinScale(5.0f);
-                    andy.getScaleController().setMaxScale(15.0f);
-                    andy.setParent(anchorNode);
-                    andy.select();
-                    transformableNodes.add(andy);
-//                    ((AnchorNode)andy.getParent()).getAnchor().detach();
-                });
+                }
+            }
+        });
     }
 }
