@@ -94,7 +94,7 @@
     file: 'sampledata/models/ReneHolten3/Mare+LC306.fbx',
     name: 'Mare+LC306',
     recenter: 'root',
-    scale: 2.4646020000000002,
+    scale: 5.0,
   },
   samplers: [
     {

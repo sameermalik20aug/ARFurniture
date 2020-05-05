@@ -30,10 +30,11 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-
     implementation 'com.google.ar:core:1.7.0'
     implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.7.0'
     implementation 'com.android.support:design:28.0.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
 }
 
 apply plugin: 'com.google.ar.sceneform.plugin'
@@ -198,3 +199,44 @@ sceneform.asset('sampledata/models/barts/Natuzzi-tempo-2834.fbx',
         'default',
         'sampledata/models/barts/Natuzzi-tempo-2834.sfa',
         'src/main/assets/natuzzi')
+
+sceneform.asset('sampledata/models/atv/atv.fbx',
+        'default',
+        'sampledata/models/atv/atv.sfa',
+        'src/main/assets/atv')
+
+sceneform.asset('sampledata/models/abookshelf/abookshelf.fbx',
+        'default',
+        'sampledata/models/abookshelf/abookshelf.sfa',
+        'src/main/assets/abookshelf')
+
+sceneform.asset('sampledata/models/airhockeytable/Game_Air_Hockey_48x84.fbx',
+        'default',
+        'sampledata/models/airhockeytable/Game_Air_Hockey_48x84.sfa',
+        'src/main/assets/airhockeytable')
+
+sceneform.asset('sampledata/models/achair/achair.fbx',
+        'default',
+        'sampledata/models/achair/achair.sfa',
+        'src/main/assets/achair')
+
+sceneform.asset('sampledata/models/apooltable/Game_Pool_Table_53x91.fbx',
+        'default',
+        'sampledata/models/apooltable/Game_Pool_Table_53x91.sfa',
+        'src/main/assets/apooltable')
+
+//sceneform.asset('sampledata/models/bedricher/bed_richter.fbx',
+//        'default',
+//        'sampledata/models/bedricher/bed_richter.sfa',
+//        'src/main/assets/bed_richter.sfb')
+
+
+sceneform.asset('sampledata/models/game_foosball_table/122186.fbx',
+        'default',
+        'sampledata/models/game_foosball_table/122186.sfa',
+        'src/main/assets/122186')
+
+sceneform.asset('sampledata/models/beanbag/beanbag.fbx',
+        'default',
+        'sampledata/models/beanbag/beanbag.sfa',
+        'src/main/assets/beanbag')
